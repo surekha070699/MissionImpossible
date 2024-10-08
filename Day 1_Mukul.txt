@@ -1,0 +1,49 @@
+1- find the second largest element in an Array
+
+  public int print2largest(List<Integer> arr) {
+        int largest = Integer.MIN_VALUE;
+        int secondLargest = Integer.MIN_VALUE;
+
+        for(int element: arr){
+            if(element>largest){
+                secondLargest=largest;
+                largest=element;
+            }else if(element!=largest && element>secondLargest){
+                secondLargest=element;
+            }
+        }
+        if(secondLargest == Integer.MIN_VALUE)
+        return -1;
+       return secondLargest;
+    }
+
+-------------------------------------------------
+2- find kth smallest 
+
+   public static int kthSmallest(int[] arr, int k) 
+    { 
+        //Your code here
+        PriorityQueue<Integer> pq= new PriorityQueue<>();
+        for(int i=0;i<arr.length;i++){
+            pq.add(arr[i]);
+        }
+        for(int i=0;i<k-1;i++){
+            pq.poll();
+        }
+        return pq.peek();
+    } 
+
+-------------------------------------------------
+3- find kth largest
+
+ public int findKthLargest(int[] nums, int k) {
+        //Your code here
+        PriorityQueue<Integer> pq= new PriorityQueue<>(Collections.reverseOrder());
+        for(int i=0;i<nums.length;i++){
+            pq.add(nums[i]);
+        }
+        for(int i=0;i<k-1;i++){
+            pq.poll();
+        }
+        return pq.peek();
+    } 
