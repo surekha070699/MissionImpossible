@@ -1,0 +1,8 @@
+defaultBrowser: "chrome"
+chromeCapabilities:
+  - "--start-maximized"
+  - "--ignore-certificate-errors"
+  - "--remote-allow-origins=*"
+fireFoxCapabilities:
+  - "-private-window"
+

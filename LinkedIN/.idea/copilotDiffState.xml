@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/src/main/java/org/example/pageObjects/Pages.java">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/src/main/java/org/example/pageObjects/Pages.java" />
+              <option name="originalContent" value="package org.example.pageObjects;&#10;&#10;public enum Pages {&#10;    HOME(&quot;/home&quot;),&#10;    LOGIN(&quot;login/&quot;);&#10;&#10;    private String name;&#10;&#10;    Pages(String name) {&#10;        this.name = name;&#10;    }&#10;&#10;    @Override&#10;    public String toString() {&#10;        return this.name;&#10;    }&#10;}&#10;" />
+              <option name="updatedContent" value="package org.example.pageObjects;&#10;&#10;public enum Pages {&#10;    HOME(&quot;/home&quot;),&#10;    LOGIN(&quot;login/&quot;);&#10;&#10;    private String name;&#10;&#10;    Pages(String name) {&#10;        this.name = name;&#10;    }&#10;&#10;    @Override&#10;    public String toString() {&#10;        return this.name;&#10;    }&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
